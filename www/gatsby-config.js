@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 const siteMetadata = {
-  title: `Novela by Narative`,
+  title: `Himanshu Goel`,
   name: `Narative`,
-  siteUrl: `https://novela.narative.co`,
+  siteUrl: `https://himanshugoel.in`,
   description: `This is my description that will be used in the meta tags and important for search results`,
   hero: {
     heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
@@ -11,7 +11,7 @@ const siteMetadata = {
   },
   social: [
     {
-      url: `https://twitter.com/narative`,
+      url: `https://twitter.com/himanshugoel21`,
     },
     {
       url: `https://behance.com/narative`,
@@ -94,6 +94,9 @@ const plugins = [
   },
 ];
 
+module.exports = {
+  plugins: ['@narative/gatsby-theme-novela'],
+};
 /**
  * For development purposes if there's no Contentful Space ID and Access Token
  * set we don't want to add in gatsby-source-contentful because it will throw
